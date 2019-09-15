@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_knowledge_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sh_card_title_gradient">
+
+        <TextView
+            android:id="@+id/item_knowledge_card_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/sh_item_knowledge_card_left"
+            android:padding="4dp"
+            android:text="必修一"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/item_knowledge_card_chapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_knowledge_card_book"
+            android:layout_toRightOf="@id/item_knowledge_card_book"
+            android:background="@drawable/sh_item_knowledge_card_right"
+            android:padding="4dp"
+            android:text="01 集合"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/item_knowledge_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_knowledge_card_book"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="集合的定义"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_knowledge_card_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:text="dsfsdfdsfjkahgkdfhkd\ndfjksdjfkljsdlf\n\n\n\n\n\n\n\n\n\n\ndsfsdfs"
+        android:textSize="24sp" />
+</LinearLayout>

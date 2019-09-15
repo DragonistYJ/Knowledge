@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu"
+    app:startDestination="@id/bookMenuFragment">
+
+    <fragment
+        android:id="@+id/bookMenuFragment"
+        android:name="love.dragonist.knowledge.fragment.BookMenuFragment"
+        android:label="fragment_book_menu"
+        tools:layout="@layout/fragment_book_menu" >
+        <action
+            android:id="@+id/action_bookMenuFragment_to_chapterMenuFragment"
+            app:destination="@id/chapterMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chapterMenuFragment"
+        android:name="love.dragonist.knowledge.fragment.ChapterMenuFragment"
+        android:label="fragment_chapter_menu"
+        tools:layout="@layout/fragment_chapter_menu" >
+        <action
+            android:id="@+id/action_chapterMenuFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="love.dragonist.knowledge.fragment.ContentFragment"
+        android:label="fragment_content"
+        tools:layout="@layout/fragment_content" />
+</navigation>
